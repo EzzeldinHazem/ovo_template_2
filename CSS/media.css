@@ -1,0 +1,392 @@
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+@media (max-width: 767px) {
+    .header .logo {
+        width: 100%;
+    }
+    ::-webkit-scrollbar,
+    ::-webkit-scrollbar-thumb,
+    ::-webkit-scrollbar-track {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .header .main-nav {
+        margin: auto;
+    }
+}
+
+@media (max-width: 767px) {
+    .header .main-nav > li > a {
+        padding: 10px;
+        font-size: 14px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 767px) {
+    .header .mega-menu {
+        flex-direction: column;
+        gap: 0;
+        padding: 5px;
+        background-color: rgb(31, 31, 31);
+    }
+}
+
+@media (max-width: 991px) {
+    .header .mega-menu .image {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .header .mega-menu .links li:hover::before {
+        width: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    body {
+        background-color: rgb(31, 31, 31);
+    }
+
+    .header {
+        background-color: rgb(31, 31, 31);
+    }
+
+    .header .main-nav > li > a {
+        color: white;
+    }
+
+    .header .main-nav > li > a:hover {
+        background-color: rgb(31, 31, 31);
+    }
+
+    .landing {
+        min-height: 100vh;
+        background-color: #1f2021;
+        background-image: url("../images/Landing-media.jpg");
+        background-size: cover;
+        position: relative;
+    }
+
+    .landing .overlay {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(0 0 0 / 60%);
+    }
+
+    .landing .text h1 {
+        color: white;
+        font-size: 18px;
+    }
+
+    .landing .text p {
+        color: rgb(216, 207, 207);
+    }
+}
+
+@media (max-width: 991px) {
+    .landing .text {
+        text-align: center;
+    }
+
+    .landing .text h1 {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 991px) {
+    .landing .text p {
+        margin: 10px auto;
+    }
+}
+
+@media (max-width: 767px) {
+    .landing .text p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 991px) {
+    .landing .image {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .main-title {
+        border: 2px solid var(--main-color);
+        border-radius: 30%;
+        color: white;
+        font-weight: normal;
+    }
+    .main-title::before,
+    .main-title::after {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .articles .box {
+    background-color: #DDD;
+    border-radius: 20px;
+}
+    .articles .box img {
+        border-radius: 20px 20px 0 0;
+    }
+
+    .articles .box .info i {
+    animation: moving-arrow 0.6s linear infinite;
+}
+
+@keyframes moving-arrow {
+    100% {
+        transform: translateX(10px);
+    }
+}
+
+.gallery  {
+    background-color: rgb(31, 31, 31);
+}
+
+.gallery .box {
+    background-color: #16476e;
+    border-radius: 10%;
+}
+
+.features .box {
+    border-radius: 40px;
+}
+
+.features .box .img-holder img {
+    border-radius: 40px;
+}
+
+.features .quality .img-holder::before {
+    border-radius: 40px;
+}
+
+.features .time .img-holder::before {
+    border-radius: 40px;
+}
+
+.features .passion .img-holder::before {
+    border-radius: 40px;
+}
+
+.testimonials {
+    background-color: rgb(27, 25, 25);
+}
+
+.testimonials .box {
+    background-color: rgb(31, 31, 31);
+}
+
+.testimonials .box img {
+    border: 10px solid rgb(27, 25, 25);
+}
+
+.team .box::before {
+    width: calc(100% - 30px);
+    background-color: rgb(27, 25, 25);
+}
+
+.services {
+    background-color: rgb(31, 31, 31);
+}
+
+.services .box {
+    background-color: rgb(27, 25, 25);
+    border-radius: 20px;
+}
+
+.services .box .info {
+    background-color: rgb(31, 31, 31);
+}
+.our-skills img {
+    display: none;
+}
+.our-skills .skills {
+    padding: 0;
+}
+
+.our-skills .skill h3 {
+    color: white;
+}
+
+.work-step {
+    background-color: rgb(31, 31, 31);
+}
+
+.work-step .container .box {
+    background-color: rgb(27, 25, 25);
+}
+
+.work-step .box a {
+    display: block;
+    border: 2px solid var(--main-color);
+    width: fit-content;
+    margin: 0 auto 30px;
+    font-weight: normal;
+    font-size: 22px;
+    padding: 10px 30px;
+    color: var(--main-color);
+    border-radius: 7px;
+    transition: var(--transition);
+    background: linear-gradient(to right, var(--main-color) 50%, rgb(27, 25, 25) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+}
+
+.events .subscribe form {
+    max-width: 100%;
+    padding: 20px;
+    flex-direction: column;
+    border-radius: 6px;
+    background-color: rgb(27, 25, 25);
+}
+
+.events .subscribe form input[type="email"] {
+    border-radius: 6px;
+}
+
+.events .title,
+.events .info .time .unit span:last-child {
+    color: white;
+}
+
+.events .image::before {
+    display: none;
+}
+
+.pricing {
+    background-color: rgb(31, 31, 31);
+}
+
+.pricing .plans .plan {
+    background-color: rgb(27, 25, 25);
+}
+
+.videos .holder {
+        flex-direction: column;
+        background-color: rgb(31, 31, 31);
+        border-radius: 20px;
+}
+
+.videos .holder .list {
+        background-color: rgb(27, 25, 25);
+        color: var(--main-color);
+}
+
+.videos .holder .list .name {
+        background-color: rgb(31, 31, 31);
+}
+
+.videos .holder .preview {
+        background-color: rgb(31, 31, 31);
+}
+
+.videos .holder .preview .info {
+        background-color: rgb(27, 25, 25);
+        color: white;
+}
+
+.videos .holder .list ul li:hover {
+        background-color: rgb(24, 19, 19);
+}
+
+.videos .holder .preview img {
+    filter: grayscale(0%)
+}
+
+.stats {
+    background-color: rgb(31, 31, 31);
+}
+
+.stats .box {
+    background-color: rgb(27, 25, 25);
+}
+
+.stats .box i {
+    color: var(--main-color);
+}
+
+.stats h2 {
+    color: white;
+}
+
+.discount .form {
+    color: white;
+}
+
+.discount .form .input{
+    background-color: rgb(27, 25, 25);
+    border-bottom: none;
+}
+}
+@media (max-width: 991px) {
+    .events img {
+        display: none;
+}
+    .events .image::before {
+        display: none;
+}
+
+.discount .image {
+    flex-basis: 100%;
+}
+
+.discount .form {
+    flex-basis: 100%;
+}
+}
+
+@media (max-width:1114px) {
+.events .image::before {
+    display: none;
+}
+
+.videos .holder {
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+.footer {
+    text-align: center;
+}
+
+.footer .box .social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .box .line {
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+}
